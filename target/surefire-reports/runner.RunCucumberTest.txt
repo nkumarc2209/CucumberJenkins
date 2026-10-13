@@ -1,0 +1,94 @@
+-------------------------------------------------------------------------------
+Test set: runner.RunCucumberTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 133.3 s <<< FAILURE! -- in runner.RunCucumberTest
+Instagram login page.User opens the Instagram login page -- Time elapsed: 40.48 s <<< ERROR!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for at least one condition to be valid:
+1. visibility of element found by By.name: username, but... org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"*[name='username']"}. (actual: null)
+2. visibility of element found by By.name: text, but... org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"*[name='text']"}. (actual: null)
+3. visibility of element found by By.cssSelector: input[name='username'], but... org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"input[name='username']"}. (actual: null)
+
+(tried for 20 seconds with 500 milliseconds interval)
+Build info: version: '4.47.0', revision: '9175ed9 9175ed94d83e87cc3abeb7c9fd91367d17849d35'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '26.0.2.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 153.0.8010.48, chrome: {chromedriverVersion: 153.0.8010.52 (78e5e45d4bb4..., userDataDir: C:\Users\Vishnu\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60998}, goog:processID: 8912, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60998/devtoo..., se:cdpVersion: 153.0.8010.48, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: aa65446715c4beb0c53e70b3cebc4b2d
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at stepdefinitions.LoginSteps.user_is_on_the_instagram_url(LoginSteps.java:46)
+	at ✽.user is on the Instagram URL "https://www.instagram.com/"(file:///C:/Users/Vishnu/eclipse-workspace/cucumberprog/src/test/resources/res/Loginpage.feature:4)
+
+Instagram login page.User logs in with valid credentials -- Time elapsed: 23.30 s <<< ERROR!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for at least one condition to be valid:
+1. visibility of element found by By.name: username (caused by: org.openqa.selenium.NoSuchSessionException: invalid session id)
+2. visibility of element found by By.name: text (caused by: org.openqa.selenium.NoSuchSessionException: invalid session id)
+3. visibility of element found by By.cssSelector: input[name='username'] (caused by: org.openqa.selenium.NoSuchSessionException: invalid session id)
+
+(tried for 20 seconds with 500 milliseconds interval)
+Build info: version: '4.47.0', revision: '9175ed9 9175ed94d83e87cc3abeb7c9fd91367d17849d35'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '26.0.2.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 153.0.8010.48, chrome: {chromedriverVersion: 153.0.8010.52 (78e5e45d4bb4..., userDataDir: C:\Users\Vishnu\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53644}, goog:processID: 12724, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53644/devtoo..., se:cdpVersion: 153.0.8010.48, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 203d78f84c1377d4c9ca34b829239462
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at stepdefinitions.LoginSteps.user_is_on_the_instagram_url(LoginSteps.java:46)
+	at ✽.user is on the Instagram URL "https://www.instagram.com/"(file:///C:/Users/Vishnu/eclipse-workspace/cucumberprog/src/test/resources/res/Loginpage.feature:8)
+
+Instagram login page.User tries to login with invalid credentials -- Time elapsed: 23.45 s <<< ERROR!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for at least one condition to be valid:
+1. visibility of element found by By.name: username (caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed)
+2. visibility of element found by By.name: text (caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed)
+3. visibility of element found by By.cssSelector: input[name='username'] (caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed)
+
+(tried for 20 seconds with 500 milliseconds interval)
+Build info: version: '4.47.0', revision: '9175ed9 9175ed94d83e87cc3abeb7c9fd91367d17849d35'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '26.0.2.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 153.0.8010.48, chrome: {chromedriverVersion: 153.0.8010.52 (78e5e45d4bb4..., userDataDir: C:\Users\Vishnu\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55918}, goog:processID: 4856, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55918/devtoo..., se:cdpVersion: 153.0.8010.48, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fa841baca1a3a68d605ee1fbaa6f992a
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at stepdefinitions.LoginSteps.user_is_on_the_instagram_url(LoginSteps.java:46)
+	at ✽.user is on the Instagram URL "https://www.instagram.com/"(file:///C:/Users/Vishnu/eclipse-workspace/cucumberprog/src/test/resources/res/Loginpage.feature:15)
+
+Instagram login page.User tries to login with an empty password -- Time elapsed: 22.50 s <<< ERROR!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for at least one condition to be valid:
+1. visibility of element found by By.name: username (caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed)
+2. visibility of element found by By.name: text (caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed)
+3. visibility of element found by By.cssSelector: input[name='username'] (caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed)
+
+(tried for 20 seconds with 500 milliseconds interval)
+Build info: version: '4.47.0', revision: '9175ed9 9175ed94d83e87cc3abeb7c9fd91367d17849d35'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '26.0.2.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 153.0.8010.48, chrome: {chromedriverVersion: 153.0.8010.52 (78e5e45d4bb4..., userDataDir: C:\Users\Vishnu\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59794}, goog:processID: 12740, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59794/devtoo..., se:cdpVersion: 153.0.8010.48, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c6d56e0a1eca8b632fff4b9517ee5808
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at stepdefinitions.LoginSteps.user_is_on_the_instagram_url(LoginSteps.java:46)
+	at ✽.user is on the Instagram URL "https://www.instagram.com/"(file:///C:/Users/Vishnu/eclipse-workspace/cucumberprog/src/test/resources/res/Loginpage.feature:22)
+
+Instagram login page.User clicks the forgot password link -- Time elapsed: 22.95 s <<< ERROR!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for at least one condition to be valid:
+1. visibility of element found by By.name: username (caused by: org.openqa.selenium.NoSuchSessionException: invalid session id)
+2. visibility of element found by By.name: text (caused by: org.openqa.selenium.NoSuchSessionException: invalid session id)
+3. visibility of element found by By.cssSelector: input[name='username'] (caused by: org.openqa.selenium.NoSuchSessionException: invalid session id)
+
+(tried for 20 seconds with 500 milliseconds interval)
+Build info: version: '4.47.0', revision: '9175ed9 9175ed94d83e87cc3abeb7c9fd91367d17849d35'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '26.0.2.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 153.0.8010.48, chrome: {chromedriverVersion: 153.0.8010.52 (78e5e45d4bb4..., userDataDir: C:\Users\Vishnu\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56592}, goog:processID: 9944, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56592/devtoo..., se:cdpVersion: 153.0.8010.48, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 96d849336ab0688060317d4d654acc8a
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at stepdefinitions.LoginSteps.user_is_on_the_instagram_url(LoginSteps.java:46)
+	at ✽.user is on the Instagram URL "https://www.instagram.com/"(file:///C:/Users/Vishnu/eclipse-workspace/cucumberprog/src/test/resources/res/Loginpage.feature:29)
+
